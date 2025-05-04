@@ -6,7 +6,7 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-func Close(c *cli.Context) error {
+func Close(c *cli.Context) error { 
 	client := GetClient(c)
 
 	item_ids := []string{}
