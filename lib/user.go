@@ -9,7 +9,7 @@ type User struct {
 	BusinessAccountID interface{} `json:"business_account_id"`
 	CompletedCount    int         `json:"completed_count"`
 	CompletedToday    int         `json:"completed_today"`
-	DailyGoal         int         `json:"daily_goal"`
+	DailyGoal         int         `json:"daily_goal"` 
 	DateFormat        int         `json:"date_format"`
 	Email             string      `json:"email"`
 	Features          struct {
@@ -36,10 +36,12 @@ type User struct {
 	TimeFormat     int     `json:"time_format"`
 	Token          string  `json:"token"`
 	TzInfo         struct {
+		
 		GmtString string `json:"gmt_string"`
 		Hours     int    `json:"hours"`
 		IsDst     int    `json:"is_dst"`
 		Minutes   int    `json:"minutes"`
 		Timezone  string `json:"timezone"`
+		Count 	  int    `json:"count"`
 	} `json:"tz_info"`
 }
