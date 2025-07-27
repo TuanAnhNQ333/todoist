@@ -31,7 +31,7 @@ func (commands Commands) UrlValues() url.Values {
 	commands_text, err := json.Marshal(commands)
 	if err != nil {
 		return url.Values{}
-	}
+	} 
 	return url.Values{
 		"commands": {string(commands_text)},
 	}
