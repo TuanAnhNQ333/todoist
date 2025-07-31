@@ -15,7 +15,7 @@ const (
 	Server = "https://todoist.com/API/v9/"
 )
 
-func ParseAPIError(prefix string, resp *http.Response) error {
+func ParseAPIError(prefix string, resp *http.Response) error { 
 	errMsg := fmt.Sprintf("%s: %s", prefix, resp.Status)
 	var e struct {
 		Error string `json:"error"`
